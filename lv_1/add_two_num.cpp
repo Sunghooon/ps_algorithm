@@ -1,3 +1,4 @@
+// https://softeer.ai/practice/6295
 #include <iostream>
 #include <vector>
 
