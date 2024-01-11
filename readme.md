@@ -15,6 +15,9 @@ $ git add .
 % git push origin main
 ```
 
+
+## BFS algorithm
+
 ## Ref site
 * [Softeer](https://softeer.ai/index)
     * [level 1](https://github.com/Sunghooon/ps_algorithm/tree/main/lv_1)
