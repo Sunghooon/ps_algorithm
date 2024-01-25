@@ -31,6 +31,6 @@ It just can be considered in problem solving field, as it may cause unintended e
 ## Ref site
 * [Softeer](https://softeer.ai/index)
     * [level 1](https://github.com/Sunghooon/ps_algorithm/tree/main/softeer/lv_1)
-    * [level 2](https://github.com/Sunghooon/ps_algorithm/tree/softeer/lv_2)
-    * [level 3](https://github.com/Sunghooon/ps_algorithm/tree/softeer/lv_3)
+    * [level 2](https://github.com/Sunghooon/ps_algorithm/tree/main/softeer/lv_2)
+    * [level 3](https://github.com/Sunghooon/ps_algorithm/tree/main/softeer/lv_3)
 * [Baekjoon](https://www.acmicpc.net/)
