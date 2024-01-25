@@ -15,7 +15,18 @@ $ git add .
 % git push origin main
 ```
 
-## BFS algorithm
+## Tips
+### saving i/o time
+```c
+ios::sync_with_stdio(false);
+cin.tie(NULL);
+cout.tie(NULL);
+```
+Unsynchronize C++ i/o `iostream` and C `stdio`, C++ can use independent buffer, becoming faster (slightly). 
+
+Untie `cin` and `cout`, basically they are tied, ensuring clearing buffer before using.
+
+It just can be considered in problem solving field, as it may cause unintended effect in multi-thread env, etc.
 
 ## Ref site
 * [Softeer](https://softeer.ai/index)
