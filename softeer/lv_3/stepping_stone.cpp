@@ -2,6 +2,7 @@
 
 // A : 1 0000 0000
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -13,22 +14,37 @@ int main()
 
     int N;
     cin >> N;
-    
-    int max_val = -1;
+
+    int min_val;
     int input;
     int cnt = 0;
-    for(int i = 0 ; i < N; i++)
+    vector<int> stone(N);
+    vector<int> dp_mem;
+    dp_mem.assign(N, 1);
+
+    for (int i = 0; i < N; i++)
     {
         cin >> input;
-        if(input > max_val)
-        {
-            cnt++;
-            max_val = input;
-        }
-            
+        stone[i] = input;
     }
 
-    cout << cnt;
+    for (int i = 0; i < N; i++)
+    {
+        for (int j = 0; j < i; j++)
+        {
+            if (stone[i] > stone[j])
+            {
+                dp_mem[i] = max(dp_mem[j] + 1, dp_mem[i]);
+            }
+        }
+    }
+
+    int ans = -1;
+    for (int i = 0; i < N; i++)
+    {
+        ans = max(dp_mem[i], ans);
+    }
+    cout << ans;
 
     return 0;
 }
